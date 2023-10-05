@@ -16,14 +16,8 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    apple: '/apple-touch-icon.png',
     icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
   },
-  themeColor: [
-    { color: 'white', media: '(prefers-color-scheme: light)' },
-    { color: 'black', media: '(prefers-color-scheme: dark)' },
-  ],
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -31,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ja" suppressHydrationWarning>
       <head />
       <body className={clsx('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
-        <Providers themeProps={{ attribute: 'class', defaultTheme: 'dark' }}>
+        <Providers themeProps={{ attribute: 'class', defaultTheme: 'light' }}>
           <div className="relative flex h-screen flex-col">
             <Navbar />
             <main className="container mx-auto max-w-7xl grow px-6 pt-16">{children}</main>
