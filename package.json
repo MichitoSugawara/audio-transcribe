@@ -3,10 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "i": "pnpm python:init",
-    "install": "pnpm python:init",
     "python:init": "pip3 install git+https://github.com/m-bain/whisperx.git && pip3 install -r requirements.txt",
-    "fastapi-dev": "python3 -m uvicorn python.api:app --reload",
+    "fastapi-dev": "pip3 install -r requirements.txt && python3 -m uvicorn api.index:app --reload",
     "next-dev": "next dev",
     "dev": "concurrently \"pnpm next-dev\" \"pnpm run fastapi-dev\"",
     "build": "next build",
