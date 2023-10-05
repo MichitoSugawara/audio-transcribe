@@ -1,5 +1,5 @@
 {
-  "name": "next-app-template",
+  "name": "audio-transcribe",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,6 +10,8 @@
     "clean": "rm -rf node_modules .next next-env.d.ts"
   },
   "dependencies": {
+    "@nextui-org/button": "^2.0.21",
+    "@nextui-org/input": "^2.1.9",
     "@nextui-org/link": "2.0.19",
     "@nextui-org/navbar": "2.0.19",
     "@nextui-org/switch": "2.0.18",
