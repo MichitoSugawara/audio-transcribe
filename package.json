@@ -5,7 +5,7 @@
   "scripts": {
     "i": "pnpm python:init",
     "install": "pnpm python:init",
-    "python:init": "pip3 install git+https://github.com/m-bain/whisperx.git && pip3 install -r requirements.txt",
+    "python:init": "pip3 install -e whisperx && pip3 install -r requirements.txt",
     "fastapi-dev": "python3 -m uvicorn python.api:app --reload",
     "next-dev": "next dev",
     "dev": "concurrently \"pnpm next-dev\" \"pnpm run fastapi-dev\"",
