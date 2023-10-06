@@ -1,4 +1,4 @@
-export default async function Wait() {
+export default async function Whisp() {
   await new Promise((resolve) => {
     setTimeout(() => {
       resolve(0)

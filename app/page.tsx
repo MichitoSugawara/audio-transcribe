@@ -2,7 +2,7 @@ import { Spinner } from '@nextui-org/spinner'
 import { Suspense } from 'react'
 
 import { subtitle, title } from '@/components/primitives'
-import Wait from '@/components/Wait'
+import Whisp from '@/components/Whisp'
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         <h1 className={subtitle()}>テンプレート&nbsp;</h1>
       </div>
       <Suspense fallback={<Spinner></Spinner>}>
-        <Wait></Wait>
+        <Whisp></Whisp>
       </Suspense>
     </section>
   )
