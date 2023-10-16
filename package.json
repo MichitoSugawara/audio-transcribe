@@ -3,12 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "i": "pnpm python:init",
-    "install": "pnpm python:init",
-    "python:init": "pip3 install -r requirements.txt",
-    "fastapi-dev": "python3 -m uvicorn python.api:app --reload",
-    "next-dev": "next dev",
-    "dev": "concurrently \"pnpm next-dev\" \"pnpm run fastapi-dev\"",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "prettier --write . && eslint --cache --fix .",
